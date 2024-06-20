@@ -1,0 +1,39 @@
+/* content.css */
+
+/* Tüm sayfa boyunca genişleyen içerik */
+.containeric {
+    width: calc(100% - 260px); /* Sidebar genişliği çıkarılarak hesaplanır */
+    margin-left: 260px; /* Sidebar'nın bitişinden itibaren başlaması */
+    padding: 0 20px; /* Sağdan ve soldan 20px padding */
+}
+
+.contentic {
+    width: 100%; /* Tüm sayfa boyunca genişletmek için */
+    padding-top: 70px; /* Navbar yüksekliği kadar üst padding */
+    background:#FAF9F6;    /* İçerik arkaplan rengi */
+    text-align: center; /* İçeriği merkeze hizalama */
+}
+
+.containeric {
+    display: inline-block; /* İçeriği inline-block elementi olarak ayarlama */
+    text-align: left; /* İçeriği sola hizalama */
+    padding: 20px; /* İçerik içi boşluk */
+}
+
+.containeric h1 {
+    margin-bottom: 20px; /* Başlık alt boşluk */
+}
+
+.containeric label,
+.containeric input {
+    display: block; /* Etiketler ve inputlar blok elementi olarak ayarlama */
+    margin-bottom: 10px; /* Etiket ve inputlar arası boşluk */
+    width: 100%; /* Etiketlerin ve inputların genişliği */
+    padding: 10px; /* Etiket ve input içi boşluk */
+}
+
+.containeric button {
+    width: auto; /* Butonun genişliği otomatik olarak ayarlanacak */
+    margin: 0 auto; /* Butonun ortalanması */
+    padding: 10px 20px; /* Buton içi boşluk */
+}
