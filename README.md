@@ -47,8 +47,11 @@ phpMyAdmin kullanarak MySQL veritabanınızı kurun:
 2. Proje ile birlikte gelen veritabanı dosyasını (örneğin, `database.sql`) phpMyAdmin aracılığıyla içe aktarın.
 3. Veritabanı tabloları ve başlangıç verileri bu dosyada bulunacaktır.
 
-### 3. Veritabanı Bağlantısı
-`connection.php` dosyasındaki veritabanı bağlantı bilgilerini kendi bilgilerinizle değiştirin. Örneğin:
+Markdown:
+```markdown
+Veritabanı bağlantısı için PHP kodu:
+
+```php
 <?php
 $servername = "localhost";
 $username = "kullanici_adi";
@@ -58,10 +61,12 @@ $dbname = "veritabani_adi";
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Veritabanı bağlantısı başarılı.";
 } catch(PDOException $e) {
     echo "Bağlantı hatası: " . $e->getMessage();
 }
 ?>
+```
 # Statik İçerikleri Düzenleyin
 
 1. **index.php** dosyasındaki kategori resimleri ve logonuzu düzenleyin.
@@ -97,35 +102,6 @@ try {
 
 ### Bildirim Sistemi
 - Kritik stok seviyelerine ulaşıldığında kullanıcıların bilgilendirilmesi.
-
-## Ekran Görüntüleri
-
-### Giriş Ekranı
-Kullanıcıların sisteme giriş yapabilecekleri basit bir login ekranı.
-
-### Dashboard
-Kullanıcıları karşılayan ana ekran. Stok, satış ve sipariş bilgilerini özetler.
-
-### Ürünler
-Ürün görüntüleme, düzenleme ve ekleme sayfaları.
-
-### Satışlar
-Satış yapma, düzenleme ve satış raporları sayfaları.
-
-### Siparişler
-Sipariş oluşturma, aktif ve geçmiş siparişleri görüntüleme sayfaları.
-
-### Tedarikçiler
-Tedarikçi görüntüleme ve düzenleme sayfaları.
-
-### Stok
-Stok görüntüleme ve düzenleme sayfaları.
-
-### Kullanıcı İşlemleri
-Kullanıcı ekleme, düzenleme ve yetkilendirme işlemleri.
-
-### Bildirimler
-Kullanıcılara kritik stok seviyelerinde bildirim gönderme.
 
 ## Veritabanı Yapısı
 
