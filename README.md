@@ -50,8 +50,6 @@ phpMyAdmin kullanarak MySQL veritabanınızı kurun:
 Markdown:
 ```markdown
 Veritabanı bağlantısı için PHP kodu:
-
-```php
 <?php
 $servername = "localhost";
 $username = "kullanici_adi";
